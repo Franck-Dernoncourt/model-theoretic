@@ -9,7 +9,9 @@ except for the train/test split, which is random. The main parameters of the exp
 (data set, classifier, type of word vector, etc.) can be changed in the first lines of the
 main function. 
 
-To run the code, use python hw4xp.py
+Usage examples:
+python xp.py -m PLSR -s ad -v ../data/GoogleNews-vectors-negative300-short-onlyspaces.txt > ad_word2vec_plsr.txt & 
+python xp.py -m true-mode -s qmr > qmr_true-mode.txt & 
 
 The code was tested with Python 2.7, SciPy 0.16.0 and scikit-learn between 0.16.1, and
 NumPy 1.9.2. According to some deprecation warnings, it looks like scikit-learn 0.19
